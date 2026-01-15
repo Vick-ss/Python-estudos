@@ -33,3 +33,14 @@ pyautogui.press("tab") # passando pro próximo campo
 pyautogui.write("Teste123Senha")
 pyautogui.press("tab")
 pyautogui.press("enter")
+# pausa maior para o carregamento do site
+time.sleep(4)
+
+# Passo 3: Importação da base de produtos pra cadastrar
+import pandas as pd
+
+
+tabela = pd.read_csv("produtos.csv")
+
+
+print(tabela)
